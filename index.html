@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>Sitio web Tucumans</title>
+   <link rel="stylesheet" href="css/estilos.css">
+   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+   <nav class="navbar">
+      <ul>
+         <li class="logo">🍔</li>
+         <li class="button active" data-filter="Home">Home</li>
+         <li class="button" data-filter="Todo">Productos</li>
+         <li class="button" data-filter="Tucumana">Tucumanas</li>
+         <li class="button" data-filter="Bebida">Bebidas</li>
+         <li class="button" data-filter="Salsa">Salsas</li>
+         <li class="button" data-filter="Login">Iniciar sección</li>
+         <div style="clear: both;"></div>
+      </ul>
+   </nav>
+
+   <section class="container">
+      <div class="inicio-container">
+         <div class="home">
+            <h3>Bienvenido a nuestra tienda online</h3>
+            <h1 class="des">Con Nuevos Sabores<br>Para tu<span class="des" style="color: yellow;">Paladar</span></h1>
+               <p class="descripcion">
+                  ¡Disfruta del sabor irresistible de las tucumanas tradicionales desde la comodidad de tu hogar!
+                  <br><br>
+                  Te antojan unas deliciosas tucumanas recién horneadas? No tienes que salir de casa para disfrutarlas.
+                  En nuestra tienda online, te ofrecemos una amplia variedad de tucumanas tradicionales, preparadas con
+                  ingredientes frescos y de la más alta calidad.
+               </p>
+               <button class="btn-inicio" id="verProductos">Ver Productos</button>
+         </div>
+         <div class="imagen-home">
+            <img src="images/img-master.png" alt="Imagen de Tucumana">
+         </div>
+      </div>
+
+      <div class="productos">
+
+         <div class="box filter Tucumana">
+            <img src="images/tucumanas/tucumana-1.jpg" alt="">
+            <p class="nombre">De Carne</p>
+            <p class="precio">Precio: 10 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Tucumana">
+            <img src="images/tucumanas/tucumana-2.jpg" alt="">
+            <p class="nombre">De Pollo</p>
+            <p class="precio">Precio: 8 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Tucumana">
+            <img src="images/tucumanas/tucumana-3.jpg" alt="">
+            <p class="nombre">Carne Mixta</p>
+            <p class="precio">Precio: 15 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Tucumana">
+            <img src="images/tucumanas/tucumana-4.jpg" alt="">
+            <p class="nombre">Carne Queso</p>
+            <p class="precio">Precio: 15 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Bebida">
+            <img src="images/bebidas/bebida-1.jpg" alt="">
+            <p class="nombre">Coca Cola</p>
+            <p class="precio">Precio: 5 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Bebida">
+            <img src="images/bebidas/bebida-2.jpg" alt="">
+            <p class="nombre">Fanta</p>
+            <p class="precio">Precio: 5 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Bebida">
+            <img src="images/bebidas/bebida-3.jpg" alt="">
+            <p class="nombre">Pepsi</p>
+            <p class="precio">Precio: 4 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Bebida">
+            <img src="images/bebidas/bebida-4.jpg" alt="">
+            <p class="nombre">Sprite</p>
+            <p class="precio">Precio: 4 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Salsa">
+            <img src="images/salsas/salsa-1.jpg" alt="">
+            <p class="nombre">Mayonesa</p>
+            <p class="precio">Precio: 5 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Salsa">
+            <img src="images/salsas/salsa-2.jpg" alt="">
+            <p class="nombre">Ketchup</p>
+            <p class="precio">Precio: 5 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Salsa">
+            <img src="images/salsas/salsa-3.jpg" alt="">
+            <p class="nombre">De Queso</p>
+            <p class="precio">Precio: 10 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Salsa">
+            <img src="images/salsas/salsa-4.jpg" alt="">
+            <p class="nombre">De Aguacate</p>
+            <p class="precio">Precio: 15 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Tucumana">
+            <img src="images/tucumanas/tucumana-5.jpg" alt="">
+            <p class="nombre">Jamon</p>
+            <p class="precio">Precio: 13 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Tucumana">
+            <img src="images/tucumanas/tucumana-6.jpg" alt="">
+            <p class="nombre">Cordero</p>
+            <p class="precio">Precio: 10 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Tucumana">
+            <img src="images/tucumanas/tucumana-7.jpg" alt="">
+            <p class="nombre">Sardina</p>
+            <p class="precio">Precio: 8 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Tucumana">
+            <img src="images/tucumanas/tucumana-8.jpg" alt="">
+            <p class="nombre">Queso</p>
+            <p class="precio">Precio: 12 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Bebida">
+            <img src="images/bebidas/bebida-5.jpg" alt="">
+            <p class="nombre">Del Valle</p>
+            <p class="precio">Precio: 8 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Bebida">
+            <img src="images/bebidas/bebida-6.jpg" alt="">
+            <p class="nombre">Guava</p>
+            <p class="precio">Precio: 12 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Bebida">
+            <img src="images/bebidas/bebida-7.jpg" alt="">
+            <p class="nombre">Fucetea</p>
+            <p class="precio">Precio: 8 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Bebida">
+            <img src="images/bebidas/bebida-8.jpg" alt="">
+            <p class="nombre">Rivena</p>
+            <p class="precio">Precio: 20 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Salsa">
+            <img src="images/salsas/salsa-5.jpg" alt="">
+            <p class="nombre">Llajua</p>
+            <p class="precio">Precio: 3 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Salsa">
+            <img src="images/salsas/salsa-6.jpg" alt="">
+            <p class="nombre">De Ajo</p>
+            <p class="precio">Precio: 5 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Salsa">
+            <img src="images/salsas/salsa-7.jpg" alt="">
+            <p class="nombre">De Almendra</p>
+            <p class="precio">Precio: 12 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+
+         <div class="box filter Salsa">
+            <img src="images/salsas/salsa-8.jpg" alt="">
+            <p class="nombre">De Tomate</p>
+            <p class="precio">Precio: 5 Bs</p>
+            <p class="añadir">Añadir al Carrito</p>
+            <div class="cont_tapa"></div>
+         </div>
+         
+      </div>
+
+      <div id="loginForm" class="container" style="display: none;">
+         <h2>Iniciar sesión</h2>
+         <form>
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required><br>
+            <input type="submit" value="Iniciar sesión">
+         </form>
+      </div>
+
+   </section>
+</body>
+
+</html>
+

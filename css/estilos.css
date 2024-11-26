@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Frijole&family=Nosifer&family=Trade+Winds&display=swap');
+*{
+font-family: 'Poppins', sans-serif;
+}
+
+@keyframes neon {
+    0% {
+        box-shadow: 0 0 3px orange, 0 0 6px orange, 0 0 10px orange;
+    }
+    50% {
+        box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+    }
+    100% {
+        box-shadow: 0 0 3px orange, 0 0 6px orange, 0 0 10px orange;
+    }
+}
+
+body {
+    margin: 0;
+    font-weight: bold;
+    overflow-x: hidden;
+    /*background-image: url(../images/img-main.png);
+    /*background-image: url(../images/fondo.webp);*/
+    background-color: #111010;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: orange;
+    margin-top: -10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    cursor: pointer;
+}
+.logo {
+    color: white;
+    margin-right: 25%;
+    margin-left: 20px;
+    margin-top: -15px;
+    font-size: 40px;
+}
+
+ul {
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    padding: 10px 10px;
+    margin-right: 20px;
+    color: #000;
+    font-size: 20px;
+}
+
+ul li:hover, .active {
+    color: #FFF;
+    cursor: pointer;
+    transition:0s ;
+    border-bottom: 2px solid #000;
+}
+
+.inicio-container {
+    width: 98%;
+    height: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    margin-top: -20px;
+    border-radius: 10px;
+}
+
+.home {
+    width: 50%;
+    height: 470px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    margin-left: 30px;
+    padding: 30px;
+    margin-top: -10px;
+    border-radius: 10px;
+}
+
+.des {
+    font-size: 35px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: -5px;
+    font-family: 'Nosifer', sans-serif;
+    font-weight: 200;
+}
+h3{
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.descripcion{
+    margin: 0 25px 15px 25px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.btn-inicio {
+    width: 28%;
+    height: 45px;
+    background-color: orange;
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.btn-inicio:hover {
+    background-color: #FFF;
+    border: 2px solid orange;
+}
+.imagen-home{
+    width: 530px;
+    height: 530px;
+    margin: 40px;
+}
+.imagen-home img {
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 30px;
+    filter: drop-shadow(8px 8px 8px rgb(235, 200, 5));
+}
+.container {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*background-color: #FFF;*/
+    /*box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);*/
+    margin: 0 auto;
+    margin-top: 90px;
+    border-radius: 20px;
+    padding-top: 30px;
+    flex-direction: column;
+}
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    animation: neon 2s linear infinite;
+    /*box-shadow: 0 0 20px rgba(247, 246, 244, 0.938);
+    /*background-color: #FFFFFF;*/
+}
+.productos .box {
+    width: 300px;
+    height: 420px;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
+    background-color: #FFFFFF;
+    /*border: 1px solid #000;*/
+    font-size: 1.2em;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 20px 12px 0 8px;
+}
+.productos .box img {
+    width: 100%;
+    height: 70%; 
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    border-radius: 15px;
+}
+.productos .box .nombre {
+    margin: 5px 0 0;
+    font-size: 19px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Nosifer', sans-serif;
+}
+.productos .box .precio {
+    margin: 5px 0 5px 0;
+    font-size: 17px;
+    color: lime;
+    font-weight: 800;
+}
+.productos .box .añadir {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    color: #000;
+    background-color: orange;
+    border-radius: 10px;
+    margin: 5px 0 5px 0;
+    cursor: pointer;
+}
+
+/* con tapa*/
+div.box>div.cont_tapa {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+div.box:hover>div.cont_tapa {
+    width: 285px;
+    height: 285px;
+    border-radius: 15px;
+    top: 0;
+    margin-top: 7px;
+    visibility: visible;
+    opacity: 1;
+}
+
+#loginForm {
+    width: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(250, 246, 2, 0.8);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px 0 0 0;
+}
+
+#loginForm h2 {
+    margin-bottom: 40px;
+}
+
+#loginForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#loginForm .container{
+    margin-top: 20px;
+}
+#loginForm label {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="email"],
+#loginForm input[type="password"],
+#loginForm input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
+#loginForm input[type="submit"] {
+    background-color: orange;
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#loginForm input[type="submit"]:hover {
+    background-color: #FFFFFF;
+    border: 2px solid orange;
+}
+
