@@ -83,8 +83,7 @@ ul li:hover, .active {
     width: 50%;
     height: 470px;
     text-align: center;
-    /*box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);*/
-    border-style:dashed ;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
     border-color: #FFFFFF;
     margin: -10px 0 0 30px;
     padding: 30px;
