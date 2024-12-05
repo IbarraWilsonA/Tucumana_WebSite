@@ -6,10 +6,10 @@ font-family: 'Poppins', sans-serif;
 
 @keyframes neon {
     0% {
-        box-shadow: 0 0 3px orange, 0 0 6px orange, 0 0 10px orange;
+        box-shadow: 0 0 3px white, 0 0 6px white, 0 0 10px white;
     }
     50% {
-        box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+        box-shadow: 0 0 5px lime, 0 0 10px lime, 0 0 20px lime;
     }
     100% {
         box-shadow: 0 0 3px orange, 0 0 6px orange, 0 0 10px orange;
@@ -83,10 +83,11 @@ ul li:hover, .active {
     width: 50%;
     height: 470px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
-    margin-left: 30px;
+    /*box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);*/
+    border-style:dashed ;
+    border-color: #FFFFFF;
+    margin: -10px 0 0 30px;
     padding: 30px;
-    margin-top: -10px;
     border-radius: 10px;
 }
 
@@ -166,7 +167,7 @@ h3{
     margin-top: -30px;
     margin-bottom: 30px;
     padding-bottom: 20px;
-    animation: neon 2s linear infinite;
+    animation: neon 3s linear infinite;
     /*box-shadow: 0 0 20px rgba(247, 246, 244, 0.938);
     /*background-color: #FFFFFF;*/
 }
@@ -174,9 +175,9 @@ h3{
     width: 300px;
     height: 420px;
     text-align: center;
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
-    background-color: #FFFFFF;
+    /*box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
     /*border: 1px solid #000;*/
+    background-color: #FFFFFF;
     font-size: 1.2em;
     box-sizing: border-box;
     text-transform: uppercase;
@@ -249,7 +250,7 @@ div.box:hover>div.cont_tapa {
     padding: 15px;
     border-radius: 20px;
     background-color: #FFF;
-    box-shadow: 0 0 10px rgba(250, 246, 2, 0.8);
+    animation: neon 2s linear infinite;
     text-align: center;
     margin: 0 auto;
     margin-top: 10px 0 0 0;
